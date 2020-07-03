@@ -9,8 +9,8 @@ class Customer(models.Model):
     user = models.OneToOneField(
         User, null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=250, null=True)
-    phone = models.CharField(max_length=13, null=True)
-    email = models.EmailField(max_length=250, null=True)
+    phone = models.CharField(max_length=13, null=True, blank=True)
+    email = models.EmailField(max_length=250, null=True, blank=True)
     profile_pic = models.ImageField(default='logo2.png', null=True, blank=True)
     date_created = models.DateTimeField(default=timezone.now)
 

@@ -12,6 +12,8 @@ django = "*"
 pylint-django = "*"
 django-filter = "*"
 pillow = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.8"
